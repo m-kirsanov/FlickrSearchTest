@@ -30,6 +30,7 @@ struct FlickrSearchView: View {
                             NavigationLink(destination: ItemDetailsView(item: item)) {
                                 VStack {
                                     CachedAsyncImage(url: URL(string: item.imageUrl))
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
                                 }
                                 .padding(10)
                             }

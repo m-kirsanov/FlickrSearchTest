@@ -22,7 +22,6 @@
 		CF6A7D2E2D83721F00BDB398 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A7D2D2D83721F00BDB398 /* Feed.swift */; };
 		CF6A7D312D845D4100BDB398 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A7D302D845D4100BDB398 /* CachedAsyncImage.swift */; };
 		CF6A7D382D8462E900BDB398 /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A7D372D8462E900BDB398 /* ItemDetailsView.swift */; };
-		CF6A7D3A2D84656400BDB398 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A7D392D84656400BDB398 /* HTMLTextView.swift */; };
 		CF6A7D3F2D846BBF00BDB398 /* MockGetFeedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A7D3E2D846BBF00BDB398 /* MockGetFeedUseCase.swift */; };
 		CF6A7D432D846C5100BDB398 /* FeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A7D422D846C5100BDB398 /* FeedViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -63,7 +62,6 @@
 		CF6A7D2D2D83721F00BDB398 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		CF6A7D302D845D4100BDB398 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
 		CF6A7D372D8462E900BDB398 /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
-		CF6A7D392D84656400BDB398 /* HTMLTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextView.swift; sourceTree = "<group>"; };
 		CF6A7D3E2D846BBF00BDB398 /* MockGetFeedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetFeedUseCase.swift; sourceTree = "<group>"; };
 		CF6A7D422D846C5100BDB398 /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				CF6A7D302D845D4100BDB398 /* CachedAsyncImage.swift */,
-				CF6A7D392D84656400BDB398 /* HTMLTextView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -413,7 +410,6 @@
 				CF6A7D242D836BCD00BDB398 /* GetFeedUseCase.swift in Sources */,
 				CF6A7D2E2D83721F00BDB398 /* Feed.swift in Sources */,
 				CF6A7D2A2D836DD300BDB398 /* FeedViewModel.swift in Sources */,
-				CF6A7D3A2D84656400BDB398 /* HTMLTextView.swift in Sources */,
 				CF6A7D382D8462E900BDB398 /* ItemDetailsView.swift in Sources */,
 				CF6A7D262D836CE100BDB398 /* FlickrFeedRepository.swift in Sources */,
 				CF6A7CEF2D836A5E00BDB398 /* FlickrSearchApp.swift in Sources */,

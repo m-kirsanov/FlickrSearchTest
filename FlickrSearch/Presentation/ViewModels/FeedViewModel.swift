@@ -12,13 +12,14 @@ import Combine
 final class FeedViewModel: ObservableObject {
     @Published var feed: Feed? = nil
     @Published var searchText = "" {
-        didSet { debounceSearch() }
+        didSet { performSearch() }
     }
     @Published var isLoading = false
     @Published var errorMessage: String?
 
     private let getFeedUseCase: GetFeedUseCaseProtocol
     
+    private var searchTask: Task<Void, Never>?
     private var cancellables = Set<AnyCancellable>()
     
     init(getFeedUseCase: GetFeedUseCaseProtocol) {
@@ -41,12 +42,13 @@ final class FeedViewModel: ObservableObject {
         isLoading = false
     }
     
-    private func debounceSearch() {
+    private func performSearch() {
+        searchTask?.cancel()
         $searchText
             .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
             .removeDuplicates()
             .sink { [weak self] newText in
-                Task {
+                self?.searchTask = Task {
                     await self?.getFeed(newText)
                 }
             }
